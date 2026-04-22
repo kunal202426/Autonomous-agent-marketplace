@@ -1,0 +1,110 @@
+
+> @aam/frontend@1.0.0 build
+> next build
+
+   ▲ Next.js 15.1.6
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings
+
+../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+Module not found: Can't resolve '@react-native-async-storage/async-storage' in 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\@metamask\sdk\dist\browser\es'
+
+Import trace for requested module:
+../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+../node_modules/@wagmi/connectors/dist/esm/metaMask.js
+../node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../node_modules/wagmi/dist/esm/exports/connectors.js
+./src/lib/wallet.ts
+./src/components/providers.tsx
+
+../node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\pino\lib'
+
+Import trace for requested module:
+../node_modules/pino/lib/tools.js
+../node_modules/pino/pino.js
+../node_modules/@walletconnect/logger/dist/index.es.js
+../node_modules/@walletconnect/universal-provider/dist/index.es.js
+../node_modules/@walletconnect/ethereum-provider/dist/index.es.js
+../node_modules/@wagmi/connectors/dist/esm/walletConnect.js
+../node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../node_modules/wagmi/dist/esm/exports/connectors.js
+./src/lib/wallet.ts
+./src/components/providers.tsx
+
+Failed to compile.
+
+./src/app/globals.css.webpack[javascript/auto]!=!../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css
+ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/kunal/Desktop/AAM%20Project/autonomous-agent-marketplace/frontend/postcss.config.js:1:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async findConfig (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\lib\find-config.js:85:25)
+    at async getPostCssPlugins (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:89:18)
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\index.js:124:36
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js:52:40
+    at async Span.traceAsyncFn (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\trace\trace.js:153:20)
+
+Import trace for requested module:
+./src/app/globals.css.webpack[javascript/auto]!=!../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css
+./src/app/globals.css
+
+./src/app/globals.css
+ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/kunal/Desktop/AAM%20Project/autonomous-agent-marketplace/frontend/postcss.config.js:1:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async findConfig (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\lib\find-config.js:85:25)
+    at async getPostCssPlugins (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:89:18)
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\index.js:124:36
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js:52:40
+    at async Span.traceAsyncFn (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\trace\trace.js:153:20)
+    at tryRunOrWebpackError (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:314962)
+    at __webpack_require_module__ (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:131434)
+    at __nested_webpack_require_161179__ (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:130872)
+    at C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:131723
+    at symbolIterator (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+    at done (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\neo-async\async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:13:9218), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:13:6372)
+    at C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:130593
+    at symbolIterator (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\neo-async\async.js:1:14402)
+-- inner error --
+ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/kunal/Desktop/AAM%20Project/autonomous-agent-marketplace/frontend/postcss.config.js:1:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async findConfig (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\lib\find-config.js:85:25)
+    at async getPostCssPlugins (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js:89:18)
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\config\blocks\css\index.js:124:36
+    at async C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js:52:40
+    at async Span.traceAsyncFn (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\trace\trace.js:153:20)
+    at Object.<anonymous> (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[2]!C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[3]!C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend\src\app\globals.css:1:7)
+    at C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:955548
+    at Hook.eval [as call] (eval at create (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:13:8996), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:13:6266)
+    at C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:131467
+    at tryRunOrWebpackError (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:314916)
+    at __webpack_require_module__ (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:131434)
+    at __nested_webpack_require_161179__ (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:130872)
+    at C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\webpack\bundle5.js:28:131723
+    at symbolIterator (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+
+Generated code for C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[2]!C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[3]!C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend\src\app\globals.css
+
+Import trace for requested module:
+./src/app/globals.css
+
+
+> Build failed because of webpack errors
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend
+npm error workspace @aam/frontend@1.0.0
+npm error location C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\frontend
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c next build

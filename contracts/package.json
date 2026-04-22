@@ -1,0 +1,20 @@
+{
+  "name": "@aam/contracts",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "dev:node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@types/node": "^22.10.2",
+    "hardhat": "^2.28.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
