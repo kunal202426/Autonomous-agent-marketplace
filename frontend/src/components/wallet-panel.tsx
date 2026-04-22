@@ -1,10 +1,9 @@
 "use client";
 
-import { useAccount, useConnect, useDisconnect } from "wagmi";
+import { useAccount, useDisconnect } from "wagmi";
 
 export function WalletPanel() {
   const { address, isConnected } = useAccount();
-  const { connect, connectors } = useConnect();
   const { disconnect } = useDisconnect();
 
   return (
@@ -13,20 +12,12 @@ export function WalletPanel() {
         <div>
           <h2 className="text-lg font-semibold text-white">Wallet</h2>
           <p className="mt-1 text-sm text-slate-300">
-            {isConnected ? `Connected: ${address}` : "Connect MetaMask to interact with the marketplace contract."}
+            {isConnected
+              ? `Connected via injected wallet: ${address}`
+              : "Open the site in a browser with MetaMask or another injected wallet to interact with the contract."}
           </p>
         </div>
-        {isConnected ? (
-          <button onClick={() => disconnect()}>Disconnect</button>
-        ) : (
-          <div className="flex flex-wrap gap-2">
-            {connectors.map((connector) => (
-              <button key={connector.uid} onClick={() => connect({ connector })}>
-                Connect {connector.name}
-              </button>
-            ))}
-          </div>
-        )}
+        {isConnected ? <button onClick={() => disconnect()}>Disconnect</button> : null}
       </div>
     </section>
   );
