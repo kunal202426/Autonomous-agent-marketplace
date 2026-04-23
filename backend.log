@@ -1,0 +1,90 @@
+
+> autonomous-agent-marketplace@1.0.0 backend
+> npm run dev --workspace backend
+
+
+> @aam/backend@1.0.0 dev
+> tsx watch src/index.ts
+
+Backend listening on port 4000
+Watching marketplace at 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+@TODO TypeError: results is not iterable
+    at FilterIdEventSubscriber._emitResults (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:178:30)
+    at FilterIdEventSubscriber.#poll (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ethers\src.ts\providers\subscriber-filterid.ts:110:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

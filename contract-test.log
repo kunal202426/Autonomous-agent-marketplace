@@ -2,19 +2,25 @@
 > @aam/contracts@1.0.0 test
 > hardhat test
 
-[31mAn unexpected error occurred:[39m
 
-TypeError: Class extends value undefined is not a constructor or null
-    at Object.<anonymous> (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\@nomicfoundation\hardhat-ethers\src\internal\errors.ts:3:41)
-    at Module._compile (node:internal/modules/cjs/loader:1730:14)
-    at node:internal/modules/cjs/loader:1895:10
-    at Object.require.extensions.<computed> [as .js] (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\ts-node\src\index.ts:1608:43)
-    at Module.load (node:internal/modules/cjs/loader:1465:32)
-    at Function._load (node:internal/modules/cjs/loader:1282:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
-    at Module.require (node:internal/modules/cjs/loader:1487:12)
-    at require (node:internal/modules/helpers:135:16)
+
+  AgentMarketplace
+    ✔ registers agents and updates status (787ms)
+    1) creates, assigns, completes, and pays tasks
+    ✔ refunds open tasks when cancelled
+    ✔ rejects assignment to inactive agents
+
+
+  3 passing (959ms)
+  1 failing
+
+  1) AgentMarketplace
+       creates, assigns, completes, and pays tasks:
+     AssertionError: Expected the ether balance of 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (the 1st address in the list) to change by -1000000000000000000 wei, but it changed by 0 wei
+      at async Context.<anonymous> (test\AgentMarketplace.ts:57:5)
+
+
+
 npm error Lifecycle script `test` failed with error:
 npm error code 1
 npm error path C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\contracts

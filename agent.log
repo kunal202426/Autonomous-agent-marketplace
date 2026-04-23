@@ -1,0 +1,32 @@
+
+> autonomous-agent-marketplace@1.0.0 agent
+> npm run dev --workspace agents
+
+
+> @aam/agents@1.0.0 dev
+> tsx watch src/index.ts
+
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4100
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\express\lib\application.js:635:24)
+    at <anonymous> (C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\agents\src\index.ts:43:5)
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4100
+}
+
+Node.js v22.17.0

@@ -1,0 +1,20 @@
+
+> autonomous-agent-marketplace@1.0.0 dev:node
+> npm run dev:node --workspace contracts
+
+
+> @aam/contracts@1.0.0 dev:node
+> hardhat node
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:8545
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+npm error Lifecycle script `dev:node` failed with error:
+npm error code 1
+npm error path C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\contracts
+npm error workspace @aam/contracts@1.0.0
+npm error location C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\contracts
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c hardhat node

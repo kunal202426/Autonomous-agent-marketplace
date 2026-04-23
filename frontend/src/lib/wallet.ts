@@ -1,4 +1,5 @@
 import { createConfig, http } from "wagmi";
+import { injected } from "wagmi/connectors";
 import { defineChain } from "viem";
 
 const localChain = defineChain({
@@ -18,6 +19,7 @@ const localChain = defineChain({
 
 export const wagmiConfig = createConfig({
   chains: [localChain],
+  connectors: [injected()],
   transports: {
     [localChain.id]: http(),
   },

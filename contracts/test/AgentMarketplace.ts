@@ -55,7 +55,7 @@ describe("AgentMarketplace", function () {
       .withArgs(0n, agent.address, outputHash, "ipfs://proof-output");
 
     await expect(() => marketplace.connect(creator).releasePayment(0)).to.changeEtherBalances(
-      [creator, agent],
+      [marketplace, agent],
       [ethers.parseEther("-1"), ethers.parseEther("1")],
     );
 
