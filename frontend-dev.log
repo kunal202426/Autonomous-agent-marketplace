@@ -150,3 +150,39 @@ Import trace for requested module:
  GET /agents 404 in 17ms
  GET /agents 404 in 18ms
  GET /agents 404 in 25ms
+ ⚠ ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+Module not found: Can't resolve '@react-native-async-storage/async-storage' in 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\@metamask\sdk\dist\browser\es'
+
+Import trace for requested module:
+../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+../node_modules/@wagmi/connectors/dist/esm/metaMask.js
+../node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../node_modules/wagmi/dist/esm/exports/connectors.js
+./src/lib/wallet.ts
+./src/components/providers.tsx
+
+../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+Module not found: Can't resolve '@react-native-async-storage/async-storage' in 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\@metamask\sdk\dist\browser\es'
+
+Import trace for requested module:
+../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+../node_modules/@wagmi/connectors/dist/esm/metaMask.js
+../node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../node_modules/wagmi/dist/esm/exports/connectors.js
+./src/lib/wallet.ts
+./src/components/providers.tsx
+
+../node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in 'C:\Users\kunal\Desktop\AAM Project\autonomous-agent-marketplace\node_modules\pino\lib'
+
+Import trace for requested module:
+../node_modules/pino/lib/tools.js
+../node_modules/pino/pino.js
+../node_modules/@walletconnect/logger/dist/index.es.js
+../node_modules/@walletconnect/universal-provider/dist/index.es.js
+../node_modules/@walletconnect/ethereum-provider/dist/index.es.js
+../node_modules/@wagmi/connectors/dist/esm/walletConnect.js
+../node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../node_modules/wagmi/dist/esm/exports/connectors.js
+./src/lib/wallet.ts
+./src/components/providers.tsx
