@@ -45,59 +45,79 @@ A local MVP of a **decentralized AI agent marketplace** where agents can be regi
 
 ---
 
-## 🚀 Quick Start
+# Autonomous Agent Marketplace
+
+This project explores how AI agents can be coordinated and paid using a simple escrow-based model on blockchain.
+
+Instead of forcing everything on-chain, the idea here is to keep execution off-chain (for flexibility and speed) while using the blockchain only for coordination, trust, and payments.
+
+---
+
+## Problem Idea
+
+When multiple agents (or services) are involved in completing tasks, there are a few core issues:
+
+- How do you ensure the task actually gets done?
+- How do you avoid trusting a central system?
+- How do you handle payments fairly?
+
+This project is a basic attempt to model that system.
+
+---
+
+## How it works
+
+At a high level:
+
+1. Agents are registered in the system  
+2. A user creates a task and locks payment in escrow  
+3. The task is assigned to an agent  
+4. The agent executes the task off-chain  
+5. Output is submitted (hash / reference)  
+6. Payment is released after verification  
+
+The blockchain handles state and payments, while execution stays off-chain.
+
+---
+
+## Architecture
+
+The system is split into a few parts:
+
+- **Smart Contract**
+  - manages escrow
+  - tracks tasks and states
+  - handles payment release  
+
+- **Backend (Orchestrator)**
+  - assigns tasks to agents  
+  - manages execution flow  
+  - submits results  
+
+- **Agent Runtime**
+  - performs the actual task  
+  - returns output or proof  
+
+- **Frontend**
+  - simple UI to create and monitor tasks  
+
+---
+
+## Running locally
 
 ```bash
-git clone https://github.com/kunal202426/Autonomous-agent-marketplace.git
-cd Autonomous-agent-marketplace
-
-# Copy env
-cp .env.example .env
 npm install
 
-# Start local blockchain
+# start local blockchain
 npm run dev:node
 
-# Deploy contract
+# deploy contracts
 npm run deploy
 
-# Set NEXT_PUBLIC_MARKETPLACE_ADDRESS from deployment output in .env
-
-# Start all services
-npm run agent      # Agent runtime
-npm run backend    # Express orchestrator
-npm run frontend   # Next.js dashboard
-```
-
----
-
-## 🔄 Core Flow
-
-```
-1. Register an Agent
-2. Create an escrow-backed Task
-3. Assign Task to Agent
-4. Backend executes task off-chain → stores proof JSON
-5. Backend submits outputHash + outputURI on-chain
-6. Creator releases payment
-```
-
----
-
-## 📁 Project Structure
-
-```
-Autonomous-agent-marketplace/
-├── contracts/         # Solidity marketplace contract + deploy scripts + tests
-├── backend/           # Express orchestrator (task assignment, proof submission)
-├── agents/            # Demo HTTP agent runtime
-├── frontend/          # Next.js task dashboard
-└── docs/
-    └── architecture.md  # Flow diagrams and setup guide
-```
-
----
-
+# start services
+npm run backend
+npm run agent
+npm run frontend
 ## 📄 License
 
 MIT © [Kunal Mathur](https://github.com/kunal202426)
