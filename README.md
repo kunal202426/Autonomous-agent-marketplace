@@ -1,74 +1,67 @@
 # Autonomous Agent Marketplace
 
-This project explores how AI agents can be coordinated and paid using a hybrid architecture combining off-chain execution with on-chain escrow.
+A hybrid system combining AI agents with blockchain-based escrow to coordinate task execution and payments.
 
-The main idea is simple: keep computation flexible (off-chain), but enforce trust and payments using smart contracts.
-
----
-
-## Why this exists
-
-When autonomous agents perform tasks for users, three problems show up quickly:
-
-- verifying that work was actually done
-- removing dependence on a central coordinator
-- ensuring fair payment between parties
-
-This project is a working prototype that tries to model a solution.
+This project separates **execution** (off-chain) from **trust and settlement** (on-chain), allowing flexible computation while maintaining verifiable outcomes.
 
 ---
 
-## System Design
+## Motivation
 
-The system is split into four parts:
+Autonomous agents introduce coordination challenges:
 
-### Smart Contract
-Handles:
-- task lifecycle
-- escrow locking
-- payment release
+- How do you verify task completion?
+- How do you avoid centralized control?
+- How do you guarantee fair payment?
 
-Acts as the trust layer.
+This project explores a practical system design to address these using a hybrid architecture.
 
-### Backend (Orchestrator)
-Handles:
-- task assignment
-- coordinating execution
-- submitting results on-chain
+---
 
-Simplifies flow, but is currently centralized.
+## System Architecture
 
-### Agent Runtime
-Responsible for:
-- executing tasks
-- returning outputs or references
+### Smart Contract (Trust Layer)
+- manages task lifecycle
+- locks funds in escrow
+- releases payments
 
-Can be extended to support different types of agents.
+### Backend Orchestrator (Coordination Layer)
+- assigns tasks to agents
+- manages execution flow
+- submits results on-chain
 
-### Frontend
-Used to:
+### Agent Runtime (Execution Layer)
+- executes tasks off-chain
+- returns outputs or references
+
+### Frontend (Interface Layer)
 - create tasks
 - monitor progress
-- interact with the system
+- view outputs
 
 ---
 
 ## Execution Flow
 
-1. A task is created and funded (escrow)
-2. Backend assigns task to an agent
-3. Agent executes task off-chain
-4. Output is generated and stored
-5. Backend submits output hash / URI
-6. Payment is released
+User → Create Task → Escrow Locked
+
+Backend assigns task
+
+Agent executes task off-chain
+
+Output generated (hash / URI)
+
+Backend submits result
+
+Smart contract releases payment
 
 ---
 
-## Design Choices
+## Design Decisions
 
-- Off-chain execution keeps the system flexible and cost-efficient
-- On-chain escrow removes trust assumptions in payments
-- Hybrid approach keeps implementation practical for an MVP
+- Off-chain execution → flexibility + low cost
+- On-chain escrow → trustless payments
+- Hybrid model → practical MVP
 
 ---
 
@@ -85,36 +78,38 @@ npm run frontend
 
 ---
 
-## Current State
+## Example Use Case
 
-This is an MVP focused on:
-- validating architecture
-- testing agent coordination
-- integrating escrow-based payments
+A user submits a task:
+- funds are locked
+- agent executes task
+- result is submitted
+- payment is released automatically
 
 ---
 
 ## Limitations
 
-- verification is basic (hash-based)
-- backend is a central point
-- no fault tolerance yet
-- limited scalability
+- basic verification (hash-based)
+- centralized orchestration
+- limited fault tolerance
 
 ---
 
-## Future Improvements
+## Future Scope
 
-- stronger verification (ZK / attestations)
+- verifiable computation (ZK / attestations)
 - decentralized coordination
-- reputation system for agents
+- reputation systems
 - multi-agent workflows
 
 ---
 
-## Notes
+## Key Insight
 
-This project is experimental and focused on exploring how AI agents and blockchain systems can work together.
+AI agents + blockchain can enable trust-minimized execution systems.
+
+---
 
 ## License
 
